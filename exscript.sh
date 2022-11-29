@@ -11,9 +11,14 @@ env
 echo "$now"
 
 # if Statement
-mynum=777
-if [ $mynum -eq 777 ]
+command=/usr/bin/htop
+if [ -f $command ]
 then
-  echo "The condition is true"
+  echo "$command is available, runing it."
+else
+  echo "$command is not available, installing it..."
+  sudo yum install -y htop
 fi
+
+
 
