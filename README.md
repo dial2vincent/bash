@@ -1,3 +1,5 @@
+# Bash
+- Location (hyper-v, 175, repos)
 # Bash Scripting on Linux
 Bash Scripting on Linux
 # Lesson
