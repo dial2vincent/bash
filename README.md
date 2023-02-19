@@ -49,4 +49,21 @@ else
 fi
   echo "The exit code for this script run is: $?"
 ```
+# Install Apache package & ALB
+```
+#!/bin/bash
+yum install httpd -y
+systemctl enable httpd
+mkdir /var/www/html/ado1/
+echo "<h1>This is Ado 1 Server</h1>" > /var/www/html/ado1/index.html
+systemctl start httpd
 
+#!/bin/bash
+yum install httpd -y
+systemctl enable httpd
+mkdir /var/www/html/ado2/
+echo "<h1>This is Ado 2 Server</h1>" > /var/www/html/ado2/index.html
+systemctl start httpd
+![image](https://user-images.githubusercontent.com/32223216/219941357-6de505f6-cace-4790-8517-014011e1d970.png)
+
+```
